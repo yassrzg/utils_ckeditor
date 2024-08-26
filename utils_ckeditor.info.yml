@@ -1,0 +1,11 @@
+name: 'Utils CKEditor DSFR'
+type: module
+description: 'Allows to use video, highlight, callout,quote, tab dsfr in CKEditor 5.'
+core_version_requirement: ^10.1
+package: 'User interface'
+configure: utils_ckeditor.settings
+config:
+  install:
+    - utils_ckeditor.settings
+dependencies:
+  - drupal:ckeditor5

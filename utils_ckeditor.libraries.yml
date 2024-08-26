@@ -1,0 +1,153 @@
+
+internal.ckeditor5.video:
+  css:
+    theme:
+      assets/css/utils.admin.css: {}
+  js:
+    js/build/video.js: { preprocess: false, minified: true }
+  dependencies:
+    - core/ckeditor5
+
+internal.ckeditor5.video.admin:
+  css:
+    theme:
+      assets/css/utils.admin.css: {}
+
+
+internal.ckeditor5.highlight_internal:
+  css:
+    theme:
+      assets/css/utils.admin.css: {}
+  js:
+    js/build/highLight.js: { preprocess: false, minified: true }
+  dependencies:
+    - core/ckeditor5
+
+internal.ckeditor5.highlight_internal.admin:
+  css:
+    theme:
+      assets/css/utils.admin.css: {}
+
+
+internal.ckeditor5.callout:
+  css:
+    theme:
+      assets/css/utils.admin.css: {}
+  js:
+    js/build/callout.js: { preprocess: false, minified: true }
+  dependencies:
+    - core/ckeditor5
+
+internal.ckeditor5.callout.admin:
+  css:
+    theme:
+      assets/css/utils.admin.css: {}
+
+
+internal.ckeditor5.calloutButton:
+  css:
+    theme:
+      assets/css/utils.admin.css: {}
+  js:
+    js/build/calloutButton.js: { preprocess: false, minified: true }
+  dependencies:
+    - core/ckeditor5
+
+internal.ckeditor5.calloutButton.admin:
+  css:
+    theme:
+      assets/css/utils.admin.css: {}
+
+
+internal.ckeditor5.quote:
+  css:
+    theme:
+      assets/css/utils.admin.css: {}
+  js:
+    js/build/quote.js: { preprocess: false, minified: true }
+  dependencies:
+    - core/ckeditor5
+
+internal.ckeditor5.quote.admin:
+  css:
+    theme:
+      assets/css/utils.admin.css: {}
+
+internal.ckeditor5.tab:
+  css:
+    theme:
+      assets/css/utils.admin.css: {}
+  js:
+    js/build/tab.js: { preprocess: false, minified: true }
+  dependencies:
+    - core/ckeditor5
+
+internal.ckeditor5.tab.admin:
+    css:
+      theme:
+        assets/css/utils.admin.css: {}
+
+internal.ckeditor5.button:
+  css:
+    theme:
+      assets/css/utils.admin.css: {}
+  js:
+    js/build/button.js: { preprocess: false, minified: true }
+  dependencies:
+    - core/ckeditor5
+
+internal.ckeditor5.button.admin:
+  css:
+    theme:
+      assets/css/utils.admin.css: {}
+
+internal.ckeditor5.card:
+  css:
+    theme:
+      assets/css/utils.admin.css: {}
+  js:
+    js/build/card.js: { preprocess: false, minified: true }
+  dependencies:
+    - core/ckeditor5
+
+internal.ckeditor5.card.admin:
+  css:
+    theme:
+      assets/css/utils.admin.css: {}
+
+internal.ckeditor5.alert:
+  css:
+    theme:
+      assets/css/utils.admin.css: {}
+  js:
+    js/build/alert.js: { preprocess: false, minified: true }
+  dependencies:
+    - core/ckeditor5
+
+internal.ckeditor5.alert.admin:
+  css:
+    theme:
+      assets/css/utils.admin.css: {}
+
+internal.ckeditor5.badge:
+  css:
+    theme:
+      assets/css/utils.admin.css: {}
+  js:
+    js/build/badge.js: { preprocess: false, minified: true }
+  dependencies:
+    - core/ckeditor5
+
+internal.ckeditor5.badge.admin:
+  css:
+    theme:
+      assets/css/utils.admin.css: {}
+
+
+utils.frontend:
+  js:
+    js/utils.frontend.min.js: { preprocess: false, minified: true }
+  dependencies:
+    - core/drupal
+    - core/drupalSettings
+    - core/once

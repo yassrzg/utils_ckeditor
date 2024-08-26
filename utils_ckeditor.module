@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Functionality for CKEditor Callout.
+ */
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function utils_ckeditor_page_attachments_alter(array &$page) {
+  $config = \Drupal::config('utils_ckeditor.settings');
+
+  // Attaches css assets globally.
+  $page['#attached']['library'][] = 'utils_ckeditor/utils.frontend';
+
+  // Pass settings to JavaScript.
+  $page['#attached']['drupalSettings']['ckeditorAccordion']['accordionStyle'] = [
+    'collapseAll' => $config->get('collapse_all'),
+    'keepRowsOpen' => $config->get('keep_rows_open'),
+    'animateAccordionOpenAndClose' => $config->get('animate_accordion_toggle') ?? 1,
+    'openTabsWithHash' => $config->get('open_tabs_with_hash') ?? 1,
+  ];
+
+  // Load all host_video entities.
+  $host_videos = \Drupal::entityTypeManager()->getStorage('host_video')->loadMultiple();
+  $host_urls = [];
+  foreach ($host_videos as $host_video) {
+    $host_urls[] = $host_video->get('host_url');
+  }
+
+  $page['#attached']['drupalSettings']['utilsCkeditor']['hostUrls'] = $host_urls;
+}

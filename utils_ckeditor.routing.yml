@@ -1,0 +1,39 @@
+utils_ckeditor.host_video.display:
+  path: '/admin/config/content/ckeditor/utils_ckeditor/config_video/display'
+  defaults:
+    _entity_list: 'host_video'
+    _title: 'CKEditor5 Host Config Display'
+  requirements:
+    _permission: 'Voir les configuration du module CKEditor utils_ckeditor'
+
+utils_ckeditor.host_video.add:
+  path: '/admin/config/content/ckeditor/utils_ckeditor/config_video/add'
+  defaults:
+    _entity_form: 'host_video.add'
+    _title: 'Add CKEditor5 Host'
+  requirements:
+    _permission: 'Configurer le module video ckeditor'
+
+utils_ckeditor.host_video.delete:
+  path: '/admin/config/content/ckeditor/utils_ckeditor/config_video/{host_video}/delete'
+  defaults:
+    _entity_form: 'host_video.delete'
+    _title: 'Delete CKEditor5 Host'
+  requirements:
+    _permission: 'Configurer le module video ckeditor'
+
+utils_ckeditor.host_video.edit:
+  path: '/admin/config/content/ckeditor/utils_ckeditor/config_video/{host_video}/edit'
+  defaults:
+    _entity_form: 'host_video.edit'
+    _title: 'Update CKEditor5 Host'
+  requirements:
+    _permission: 'Configurer le module video ckeditor'
+
+entity.host_video.delete_form:
+  path: '/admin/config/content/ckeditor/utils_ckeditor/config_video/{host_video}/delete'
+  defaults:
+    _entity_form: 'host_video.delete'
+    _title: 'Delete CKEditor5 Host'
+  requirements:
+    _permission: 'Configurer le module video ckeditor'

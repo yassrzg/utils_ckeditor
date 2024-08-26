@@ -1,0 +1,12 @@
+utils_ckeditor.parent:
+  title: 'Configuration du module CKEditor utils_ckeditor'
+  description: 'Configuration settings for CKEditor module'
+  parent: system.admin_config
+  route_name: <none>
+
+
+utils_ckeditor.host_video.display:
+  title: 'Configuration des hosts pour le module CKEDITOR Video'
+  description: 'Configuration des hosts pour le module CKEDITOR Video'
+  parent: utils_ckeditor.parent
+  route_name: utils_ckeditor.host_video.display

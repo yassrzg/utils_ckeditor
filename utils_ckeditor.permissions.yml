@@ -1,0 +1,9 @@
+configurer le module video ckeditor:
+  title: 'Configurer le module video ckeditor'
+  description: 'Permet de configurer le module video ckeditor.'
+
+
+Voir les configuration du module CKEditor utils_ckeditor:
+  title: 'Voir les configuration du module CKEditor utils_ckeditor'
+  description: 'Permet de voir les configuration du module CKEditor utils_ckeditor.'
+

@@ -1,0 +1,75 @@
+utils_ckeditor_ckeditor5_plugin:
+  type: mapping
+  label: 'CKEditor5 utils Plugin'
+  mapping:
+    enabled_utils:
+      type: sequence
+      label: 'Enabled utils'
+      constraints:
+        NotBlank:
+          message: 'Enable at least one util, otherwise disable the utils button.'
+        sequence:
+          type: string
+          label: 'Util'
+
+ckeditor5.plugin.utils_ckeditor_video:
+  type: utils_ckeditor_ckeditor5_plugin
+  label: 'Video'
+
+ckeditor5.plugin.utils_ckeditor_highLight:
+  type: utils_ckeditor_ckeditor5_plugin
+  label: 'Highlight'
+
+ckeditor5.plugin.utils_ckeditor_callout:
+  type: utils_ckeditor_ckeditor5_plugin
+  label: 'Callout'
+
+ckeditor5.plugin.utils_ckeditor_calloutButton:
+  type: utils_ckeditor_ckeditor5_plugin
+  label: 'Callout Button'
+
+ckeditor5.plugin.utils_ckeditor_quote:
+  type: utils_ckeditor_ckeditor5_plugin
+  label: 'Quote'
+
+ckeditor5.plugin.utils_ckeditor_tab:
+  type: utils_ckeditor_ckeditor5_plugin
+  label: 'Tab'
+
+ckeditor5.plugin.utils_ckeditor_button:
+  type: utils_ckeditor_ckeditor5_plugin
+  label: 'Button'
+
+ckeditor5.plugin.utils_ckeditor_card:
+  type: utils_ckeditor_ckeditor5_plugin
+  label: 'Card'
+
+ckeditor5.plugin.utils_ckeditor_alert:
+  type: utils_ckeditor_ckeditor5_plugin
+  label: 'Alert'
+
+ckeditor5.plugin.utils_ckeditor_badge:
+  type: utils_ckeditor_ckeditor5_plugin
+  label: 'Badge'
+
+
+
+utils_ckeditor.mapping.*:
+  type: mapping
+  label: 'Utils CKEditor DSFR'
+  mapping:
+    id:
+      type: string
+      label: 'Machine name'
+    label:
+      type: string
+      label: 'Label'
+    urlHosts:
+      type: sequence
+      label: 'URL Hosts'
+      constraints:
+        NotBlank:
+        message: 'URL Hosts is required.'
+        sequence:
+        type: string
+        label: 'URL Host'

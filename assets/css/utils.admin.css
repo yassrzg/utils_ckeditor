@@ -1,0 +1,814 @@
+
+
+/* ALL */
+
+.ckeditor-link,
+.ckeditor-highLight,
+.ckeditor-callout,
+.ckeditor-calloutButton,
+.ckeditor-quote,
+.ckeditor-video,
+.ckeditor-tab,
+.ckeditor-button,
+.ckeditor-card,
+.ckeditor-alert,
+.ckeditor-badge
+{
+  border: dashed 2px #d81b60;
+  padding: 40px 10px 20px;
+  position: relative;
+}
+
+.ckeditor-link .ckeditor-link-title,
+.ckeditor-highLight .ckeditor-highLight-title,
+.ckeditor-callout .ckeditor-callout-title,
+.ckeditor-calloutButton .ckeditor-calloutButton-title,
+.ckeditor-quote .ckeditor-quote-title,
+.ckeditor-video .ckeditor-video-title,
+.ckeditor-tab .ckeditor-tab-title,
+.ckeditor-button .ckeditor-button-title,
+.ckeditor-card .ckeditor-card-title,
+.ckeditor-alert .ckeditor-alert-title,
+.ckeditor-badge .ckeditor-badge-title
+{
+  border: dashed 1px #1e88e5 !important;
+  display: block;
+  padding: 5px 10px;
+  margin: 45px 0 10px;
+  position: relative;
+}
+
+.ckeditor-link .ckeditor-link-title:first-of-type,
+.ckeditor-highLight .ckeditor-highLight-title:first-of-type,
+.ckeditor-callout .ckeditor-callout-title:first-of-type,
+.ckeditor-calloutButton .ckeditor-calloutButton-title:first-of-type,
+.ckeditor-quote .ckeditor-quote-title:first-of-type,
+.ckeditor-video .ckeditor-video-title:first-of-type,
+.ckeditor-tab .ckeditor-tab-title:first-of-type,
+.ckeditor-button .ckeditor-button-title:first-of-type,
+.ckeditor-card .ckeditor-card-title:first-of-type,
+.ckeditor-alert .ckeditor-alert-title:first-of-type,
+.ckeditor-badge .ckeditor-badge-title:first-of-type
+{
+  margin-top: 20px;
+}
+
+.ckeditor-link .ckeditor-link-content,
+.ckeditor-highLight .ckeditor-highLight-content,
+.ckeditor-callout .ckeditor-callout-content,
+.ckeditor-calloutButton .ckeditor-calloutButton-content,
+.ckeditor-quote .ckeditor-quote-content,
+.ckeditor-video .ckeditor-video-content,
+.ckeditor-tab .ckeditor-tab-content,
+.ckeditor-button .ckeditor-button-content,
+.ckeditor-card .ckeditor-card-content,
+.ckeditor-alert .ckeditor-alert-content,
+.ckeditor-badge .ckeditor-badge-content
+{
+  border: dashed 1px #43a047 !important;
+  display: block;
+  padding: 5px 10px;
+  margin: 25px 0 10px;
+  position: relative;
+}
+
+
+/* LINK */
+
+.ckeditor-link:before {
+  content: 'Lien DSFR';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  font-weight: bold;
+  display: block;
+  padding: 5px 10px 0;
+}
+
+
+.ckeditor-linkInternal .ckeditor-link-title:before {
+  content: 'Texte du liens';
+  position: absolute;
+  top: -22px;
+  display: inline-block;
+  padding: 5px;
+  color: #fff;
+  background: #1e88e5;
+  line-height: 1;
+  font-size: 12px;
+  left: -1px;
+}
+
+.ckeditor-linkInternal .ckeditor-link-content:before {
+  content: 'Insérer le lien';
+  position: absolute;
+  top: -22px;
+  display: inline-block;
+  padding: 5px;
+  color: #fff;
+  background: #43a047;
+  line-height: 1;
+  font-size: 12px;
+  left: -1px;
+}
+
+/* VIDÉO */
+
+.ckeditor-video .ckeditor-video-link:before {
+  content: 'Lien de la vidéo';
+  position: absolute;
+  top: -22px;
+  display: inline-block;
+  padding: 5px;
+  color: #fff;
+  background: #1e88e5;
+  line-height: 1;
+  font-size: 12px;
+  left: -1px;
+}
+
+.ckeditor-video .ckeditor-video-source:before {
+  content: 'Insérer le lien de la source de la video';
+  position: absolute;
+  top: -22px;
+  display: inline-block;
+  padding: 5px;
+  color: #fff;
+  background: #43a047;
+  line-height: 1;
+  font-size: 12px;
+  left: -1px;
+}
+
+.ckeditor-video .ckeditor-video-title-source:before {
+  content: 'Insérer le titre du lien de la source de la video';
+  position: absolute;
+  top: -22px;
+  display: inline-block;
+  padding: 5px;
+  color: #fff;
+  background: #43a047;
+  line-height: 1;
+  font-size: 12px;
+  left: -1px;
+}
+
+.ckeditor-video:before {
+  content: 'video DSFR';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  font-weight: bold;
+  display: block;
+  padding: 5px 10px 0;
+}
+
+.ckeditor-video .ckeditor-video-source, .ckeditor-video .ckeditor-video-title-source {
+  border: dashed 1px #43a047 !important;
+  display: block;
+  padding: 5px 10px;
+  margin: 25px 0 10px;
+  position: relative;
+}
+
+
+.ckeditor-video{
+  border: dashed 2px #d81b60;
+  padding: 40px 10px 20px;
+  position: relative;
+}
+
+.ckeditor-video .ckeditor-video-link {
+  border: dashed 1px #1e88e5 !important;
+  display: block;
+  padding: 5px 10px;
+  margin: 45px 0 10px;
+  position: relative;
+}
+
+
+/* HIGHLIGHT */
+
+
+.ckeditor-highLight:before {
+  content: 'Highlight DSFR';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  font-weight: bold;
+  display: block;
+  padding: 5px 10px 0;
+}
+
+.ckeditor-highLight .ckeditor-highLight-content:before {
+  content: 'Contenu';
+  position: absolute;
+  top: -22px;
+  display: inline-block;
+  padding: 5px;
+  color: #fff;
+  background: #43a047;
+  line-height: 1;
+  font-size: 12px;
+  left: -1px;
+}
+
+
+/* CALLOUT */
+
+.ckeditor-callout .ckeditor-callout-content:before, .ckeditor-calloutButton .ckeditor-calloutButton-content:before {
+  content: 'Texte';
+  position: absolute;
+  top: -22px;
+  display: inline-block;
+  padding: 5px;
+  color: #fff;
+  background: #43a047;
+  line-height: 1;
+  font-size: 12px;
+  left: -1px;
+}
+
+.ckeditor-callout .ckeditor-callout-title:before, .ckeditor-calloutButton .ckeditor-calloutButton-title:before {
+  content: 'Titre';
+  position: absolute;
+  top: -22px;
+  display: inline-block;
+  padding: 5px;
+  color: #fff;
+  background: #1e88e5;
+  line-height: 1;
+  font-size: 12px;
+  left: -1px;
+}
+
+.ckeditor-calloutButton .ckeditor-calloutButton-title {
+  border: dashed 1px #1e88e5 !important;
+  display: block;
+  padding: 5px 10px;
+  margin: 45px 0 10px;
+  position: relative;
+}
+
+.ckeditor-calloutButton {
+  border: dashed 2px #d81b60;
+  padding: 40px 10px 20px;
+  position: relative;
+}
+
+.ckeditor-calloutButton .ckeditor-calloutButton-button {
+  border: dashed 1px #1e88e5 !important;
+  display: block;
+  padding: 5px 10px;
+  margin: 45px 0 10px;
+  position: relative;
+}
+
+.ckeditor-calloutButton .ckeditor-calloutButton-button:before, .ckeditor-calloutButton .ckeditor-calloutButton-content:nth-child(3):before {
+  content: 'Texte du boutton';
+  position: absolute;
+  top: -22px;
+  display: inline-block;
+  padding: 5px;
+  color: #fff;
+  background: #ff7f00;
+  line-height: 1;
+  font-size: 12px;
+  left: -1px;
+}
+
+.ckeditor-callout:before {
+  content: 'Mise en avant';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  font-weight: bold;
+  display: block;
+  padding: 5px 10px 0;
+}
+
+.ckeditor-calloutButton:before {
+  content: 'Mise en avant avec boutton';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  font-weight: bold;
+  display: block;
+  padding: 5px 10px 0;
+}
+
+/* QUOTE */
+
+.ckeditor-quote .ckeditor-quote-title {
+  border: dashed 1px #1e88e5 !important;
+  display: block;
+  padding: 5px 10px;
+  margin: 45px 0 10px;
+  position: relative;
+}
+
+.ckeditor-quote .ckeditor-quote-title:before {
+  content: 'Citation';
+  position: absolute;
+  top: -22px;
+  display: inline-block;
+  padding: 5px;
+  color: #fff;
+  background: #1e88e5;
+  line-height: 1;
+  font-size: 12px;
+  left: -1px;
+}
+
+.ckeditor-quote:before {
+  content: 'Quote sans image';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  font-weight: bold;
+  display: block;
+  padding: 5px 10px 0;
+}
+
+/* TAB */
+.ckeditor-tab .ckeditor-tab-title {
+  border: dashed 1px #1e88e5 !important;
+  display: block;
+  padding: 5px 10px;
+  margin: 45px 0 10px;
+  position: relative;
+}
+
+.ckeditor-tab .ckeditor-tab-title:before {
+  content: "Nom de l'onglet";
+  position: absolute;
+  top: -22px;
+  display: inline-block;
+  padding: 5px;
+  color: #fff;
+  background: #1e88e5;
+  line-height: 1;
+  font-size: 12px;
+  left: -1px;
+}
+
+.ckeditor-tab:before {
+  content: 'TAB - Onglet';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  font-weight: bold;
+  display: block;
+  padding: 5px 10px 0;
+}
+
+.ckeditor-tab .ckeditor-tab-content:before {
+  content: 'Contenu de l\'onglet';
+  position: absolute;
+  top: -22px;
+  display: inline-block;
+  padding: 5px;
+  color: #fff;
+  background: #43a047;
+  line-height: 1;
+  font-size: 12px;
+  left: -1px;
+}
+
+/* BUTTON */
+
+.ckeditor-button .ckeditor-button-title {
+  border: dashed 1px #1e88e5 !important;
+  display: block;
+  padding: 5px 10px;
+  margin: 45px 0 10px;
+  position: relative;
+}
+
+.ckeditor-button .ckeditor-button-title:before {
+  content: 'Texte du boutton';
+  position: absolute;
+  top: -22px;
+  display: inline-block;
+  padding: 5px;
+  color: #fff;
+  background: #1e88e5;
+  line-height: 1;
+  font-size: 12px;
+  left: -1px;
+}
+
+.ckeditor-button:before {
+  content: 'Button';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  font-weight: bold;
+  display: block;
+  padding: 5px 10px 0;
+}
+
+.ckeditor-button .ckeditor-button-content:before {
+  content: 'Lien du boutton';
+  position: absolute;
+  top: -22px;
+  display: inline-block;
+  padding: 5px;
+  color: #fff;
+  background: #43a047;
+  line-height: 1;
+  font-size: 12px;
+  left: -1px;
+}
+
+/* CARD */
+
+.ckeditor-card .ckeditor-card-title {
+  border: dashed 1px #1e88e5 !important;
+  display: block;
+  padding: 5px 10px;
+  margin: 45px 0 10px;
+  position: relative;
+}
+
+.ckeditor-card .ckeditor-card-title:before {
+  content: 'Titre de la carte + le lien(utiliser le module lien)';
+  position: absolute;
+  top: -22px;
+  display: inline-block;
+  padding: 5px;
+  color: #fff;
+  background: #1e88e5;
+  line-height: 1;
+  font-size: 12px;
+  left: -1px;
+}
+
+.ckeditor-card:before {
+  content: 'Carte Verticale DSFR';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  font-weight: bold;
+  display: block;
+  padding: 5px 10px 0;
+}
+
+.ckeditor-card .ckeditor-card-content:before {
+  content: 'Description de la carte';
+  position: absolute;
+  top: -22px;
+  display: inline-block;
+  padding: 5px;
+  color: #fff;
+  background: #43a047;
+  line-height: 1;
+  font-size: 12px;
+  left: -1px;
+}
+
+.ckeditor-card .ckeditor-card-image:before, .ckeditor-card .ckeditor-card-image:nth-child(3):before {
+  content: "Insérer l'image de la carte avec le module média";
+  position: absolute;
+  top: -22px;
+  display: inline-block;
+  padding: 5px;
+  color: #fff;
+  background: #43a047;
+  line-height: 1;
+  font-size: 12px;
+  left: -1px;
+}
+
+.ckeditor-card .ckeditor-card-image {
+  border: dashed 1px #43a047 !important;
+  display: block;
+  padding: 5px 10px;
+  margin: 25px 0 10px;
+  position: relative;
+}
+
+
+/* ALERT */
+
+.ckeditor-alert .ckeditor-alert-title {
+  border: dashed 1px #1e88e5 !important;
+  display: block;
+  padding: 5px 10px;
+  margin: 45px 0 10px;
+  position: relative;
+}
+
+.ckeditor-alert .ckeditor-alert-title:before {
+  content: 'Titre de l\'alerte';
+  position: absolute;
+  top: -22px;
+  display: inline-block;
+  padding: 5px;
+  color: #fff;
+  background: #1e88e5;
+  line-height: 1;
+  font-size: 12px;
+  left: -1px;
+}
+
+.ckeditor-alert:before {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  font-weight: bold;
+  display: block;
+  padding: 5px 10px 0;
+}
+
+.ckeditor-alert[data-type="info"][data-size="sm"]:before {
+  content: 'Alerte Info (Petit)';
+}
+
+.ckeditor-alert[data-type="info"][data-size="md"]:before {
+  content: 'Alerte Info (Moyen)';
+}
+
+.ckeditor-alert[data-type="success"][data-size="sm"]:before {
+  content: 'Alerte Succès (Petit)';
+}
+
+.ckeditor-alert[data-type="success"][data-size="md"]:before {
+  content: 'Alerte Succès (Moyen)';
+}
+
+.ckeditor-alert[data-type="warning"][data-size="sm"]:before {
+  content: 'Alerte Avertissement (Petit)';
+}
+
+.ckeditor-alert[data-type="warning"][data-size="md"]:before {
+  content: 'Alerte Avertissement (Moyen)';
+}
+
+.ckeditor-alert[data-type="error"][data-size="sm"]:before {
+  content: 'Alerte Erreur (Petit)';
+}
+
+.ckeditor-alert[data-type="error"][data-size="md"]:before {
+  content: 'Alerte Erreur (Moyen)';
+}
+
+
+.ckeditor-alert .ckeditor-alert-content:before {
+  content: 'Contenu de l\'alerte';
+  position: absolute;
+  top: -22px;
+  display: inline-block;
+  padding: 5px;
+  color: #fff;
+  background: #43a047;
+  line-height: 1;
+  font-size: 12px;
+  left: -1px;
+}
+
+
+/* BADGE */
+
+.ckeditor-badge .ckeditor-badge-title {
+  border: dashed 1px #1e88e5 !important;
+  display: block;
+  padding: 5px 10px;
+  margin: 45px 0 10px;
+  position: relative;
+}
+
+.ckeditor-badge .ckeditor-badge-title:before {
+  content: 'Titre du badge';
+  position: absolute;
+  top: -22px;
+  display: inline-block;
+  padding: 5px;
+  color: #fff;
+  background: #1e88e5;
+  line-height: 1;
+  font-size: 12px;
+  left: -1px;
+}
+
+.ckeditor-badge:before {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  font-weight: bold;
+  display: block;
+  padding: 5px 10px 0;
+}
+
+
+/* Badges de type "error" */
+.ckeditor-badge[data-type="error"][data-size="sm"]:before {
+  content: 'Badge Erreur (Petit)';
+}
+
+.ckeditor-badge[data-type="error"][data-size="md"]:before {
+  content: 'Badge Erreur (Moyen)';
+}
+
+/* Badges de type "success" */
+.ckeditor-badge[data-type="success"][data-size="sm"]:before {
+  content: 'Badge Succès (Petit)';
+}
+
+.ckeditor-badge[data-type="success"][data-size="md"]:before {
+  content: 'Badge Succès (Moyen)';
+}
+
+/* Badges de type "warning" */
+.ckeditor-badge[data-type="warning"][data-size="sm"]:before {
+  content: 'Badge Avertissement (Petit)';
+}
+
+.ckeditor-badge[data-type="warning"][data-size="md"]:before {
+  content: 'Badge Avertissement (Moyen)';
+}
+
+/* Badges de type "new" */
+.ckeditor-badge[data-type="new"][data-size="sm"]:before {
+  content: 'Badge Jaune (Petit)';
+}
+
+.ckeditor-badge[data-type="new"][data-size="md"]:before {
+  content: 'Badge Jaune (Moyen)';
+}
+
+/* Badges de type "info" */
+.ckeditor-badge[data-type="info"][data-size="sm"]:before {
+  content: 'Badge Info (Petit)';
+}
+
+.ckeditor-badge[data-type="info"][data-size="md"]:before {
+  content: 'Badge Info (Moyen)';
+}
+
+/* Badges de type "green-menthe" */
+.ckeditor-badge[data-type="green-menthe"][data-size="sm"]:before {
+  content: 'Badge Vert Menthe (Petit)';
+}
+
+.ckeditor-badge[data-type="green-menthe"][data-size="md"]:before {
+  content: 'Badge Vert Menthe (Moyen)';
+}
+
+/* Badges de type "orange-terre-battue" */
+.ckeditor-badge[data-type="orange-terre-battue"][data-size="sm"]:before {
+  content: 'Badge Orange Terre Battue (Petit)';
+}
+
+.ckeditor-badge[data-type="orange-terre-battue"][data-size="md"]:before {
+  content: 'Badge Orange Terre Battue (Moyen)';
+}
+
+/* Badges de type "purple-glycine" */
+.ckeditor-badge[data-type="purple-glycine"][data-size="sm"]:before {
+  content: 'Badge Glycine (Petit)';
+}
+
+.ckeditor-badge[data-type="purple-glycine"][data-size="md"]:before {
+  content: 'Badge Glycine (Moyen)';
+}
+
+
+
+
+.ckeditor-badge .ckeditor-badge-content:before {
+  content: 'Contenu du badge';
+  position: absolute;
+  top: -22px;
+  display: inline-block;
+  padding: 5px;
+  color: #fff;
+  background: #43a047;
+  line-height: 1;
+  font-size: 12px;
+  left: -1px;
+}
+
+
+
+
+
+
+
+/* ADMIN BTN */
+
+.ckeditor5-toolbar-button-Video,
+.ckeditor5-toolbar-button-Link,
+.ckeditor5-toolbar-button-HighLight,
+.ckeditor5-toolbar-button-Callout,
+.ckeditor5-toolbar-button-CalloutButton,
+.ckeditor5-toolbar-button-Quote,
+.ckeditor5-toolbar-button-Tab,
+.ckeditor5-toolbar-button-Button,
+.ckeditor5-toolbar-button-Card,
+.ckeditor5-toolbar-button-Alert
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 120px;
+  color: #000;
+}
+
+[dir="rtl"] .ckeditor5-toolbar-button-Video::before,
+[dir="rtl"] .ckeditor5-toolbar-button-Link::before,
+[dir="rtl"] .ckeditor5-toolbar-button-Callout::before,
+[dir="rtl"] .ckeditor5-toolbar-button-CalloutButton::before,
+[dir="rtl"] .ckeditor5-toolbar-button-HighLight::before,
+[dir="rtl"] .ckeditor5-toolbar-button-Quote::before,
+[dir="rtl"] .ckeditor5-toolbar-button-Tab::before,
+[dir="rtl"] .ckeditor5-toolbar-button-Button::before,
+[dir="rtl"] .ckeditor5-toolbar-button-Card::before,
+[dir="rtl"] .ckeditor5-toolbar-button-Alert::before,
+[dir="rtl"] .ckeditor5-toolbar-button-Badge::before
+{
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+[dir="rtl"] .ckeditor5-toolbar-button-Video::after,
+[dir="rtl"] .ckeditor5-toolbar-button-Link::after,
+[dir="rtl"] .ckeditor5-toolbar-button-Callout::after,
+[dir="rtl"] .ckeditor5-toolbar-button-CalloutButton::after,
+[dir="rtl"] .ckeditor5-toolbar-button-HighLight::after,
+[dir="rtl"] .ckeditor5-toolbar-button-Quote::after,
+[dir="rtl"] .ckeditor5-toolbar-button-Tab::after,
+[dir="rtl"] .ckeditor5-toolbar-button-Button::after,
+[dir="rtl"] .ckeditor5-toolbar-button-Card::after,
+[dir="rtl"] .ckeditor5-toolbar-button-Alert::after,
+[dir="rtl"] .ckeditor5-toolbar-button-Badge::after
+{
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.ckeditor5-toolbar-button-Video::before {
+  margin-left: 10px;
+  content: "Video";
+  font-size: 14px;
+}
+.ckeditor5-toolbar-button-Link::before {
+  margin-left: 10px;
+  content: "Lien DSFR";
+  font-size: 14px;
+}
+
+.ckeditor5-toolbar-button-HighLight::before {
+  margin-left: 10px;
+  content: "HighLight";
+  font-size: 14px;
+}
+
+.ckeditor5-toolbar-button-Callout::before {
+  margin-left: 10px;
+  content: "Callout";
+  font-size: 14px;
+}
+
+.ckeditor5-toolbar-button-CalloutButton::before {
+  margin-left: 10px;
+  content: "Callout Button";
+  font-size: 14px;
+}
+
+.ckeditor5-toolbar-button-Quote::before {
+  margin-left: 10px;
+  content: "Quote";
+  font-size: 14px;
+}
+
+.ckeditor5-toolbar-button-Tab::before {
+  margin-left: 10px;
+  content: "Tab - Onglet ";
+  font-size: 14px;
+}
+
+.ckeditor5-toolbar-button-Button::before {
+  margin-left: 10px;
+  content: "Button";
+  font-size: 14px;
+}
+.ckeditor5-toolbar-button-Card::before {
+  margin-left: 10px;
+  content: "Card";
+  font-size: 14px;
+}
+
+.ckeditor5-toolbar-button-Alert::before {
+  margin-left: 10px;
+  content: "Alert";
+  font-size: 14px;
+}
+
+.ckeditor5-toolbar-button-Badge::before {
+  margin-left: 10px;
+  content: "Badge";
+  font-size: 14px;
+}
+
+

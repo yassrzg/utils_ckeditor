@@ -1,0 +1,200 @@
+utils_ckeditor_video:
+  ckeditor5:
+    plugins: [video.Video]
+  drupal:
+    label: 'Video'
+    library: utils_ckeditor/internal.ckeditor5.video
+    admin_library: utils_ckeditor/internal.ckeditor5.video.admin
+    class: Drupal\utils_ckeditor\Plugin\CKEditor5Plugin\Video
+    toolbar_items:
+      Video:
+        label: 'Video'
+    elements:
+      - <dl>
+      - <dl class>
+      - <dt>
+      - <dd>
+
+utils_ckeditor_highLight:
+  ckeditor5:
+    plugins: [highLight.HighLight]
+  drupal:
+    label: 'High Light'
+    library: utils_ckeditor/internal.ckeditor5.highlight_internal
+    admin_library: utils_ckeditor/internal.ckeditor5.highlight_internal.admin
+    class: Drupal\utils_ckeditor\Plugin\CKEditor5Plugin\HighLight
+    toolbar_items:
+      HighLight:
+        label: 'High Light'
+    elements:
+      - <dl>
+      - <dl class>
+      - <dt>
+      - <dd>
+
+utils_ckeditor_callout:
+  ckeditor5:
+    plugins: [callout.Callout]
+  drupal:
+    label: 'Callout'
+    library: utils_ckeditor/internal.ckeditor5.callout
+    admin_library: utils_ckeditor/internal.ckeditor5.callout.admin
+    class: Drupal\utils_ckeditor\Plugin\CKEditor5Plugin\Callout
+    toolbar_items:
+      Callout:
+        label: 'Callout'
+    elements:
+      - <dl>
+      - <dl class>
+      - <dt>
+      - <dd>
+utils_ckeditor_calloutButton:
+  ckeditor5:
+    plugins: [calloutButton.CalloutButton]
+  drupal:
+    label: 'Callout Button'
+    library: utils_ckeditor/internal.ckeditor5.calloutButton
+    admin_library: utils_ckeditor/internal.ckeditor5.calloutButton.admin
+    class: Drupal\utils_ckeditor\Plugin\CKEditor5Plugin\CalloutButton
+    toolbar_items:
+      CalloutButton:
+        label: 'Callout Button'
+    elements:
+      - <dl>
+      - <dl class>
+      - <dt>
+      - <dd>
+utils_ckeditor_quote:
+  ckeditor5:
+    plugins: [quote.Quote]
+  drupal:
+    label: 'Quote'
+    library: utils_ckeditor/internal.ckeditor5.quote
+    admin_library: utils_ckeditor/internal.ckeditor5.quote.admin
+    class: Drupal\utils_ckeditor\Plugin\CKEditor5Plugin\Quote
+    toolbar_items:
+      Quote:
+        label: 'Quote'
+    elements:
+      - <dl>
+      - <dl class>
+      - <dt>
+      - <dd>
+utils_ckeditor_tab:
+  ckeditor5:
+    plugins:
+      - tab.Tab
+    config:
+      tab:
+        contentToolbar: [tabAddAbove, tabAddBelow, tabRemove]
+  drupal:
+    label: 'Tab'
+    library: utils_ckeditor/internal.ckeditor5.tab
+    admin_library: utils_ckeditor/internal.ckeditor5.tab.admin
+    class: Drupal\utils_ckeditor\Plugin\CKEditor5Plugin\Tab
+    toolbar_items:
+      Tab:
+        label: 'Tab'
+        widgets:
+          - tabAddAbove
+          - tabAddBelow
+          - tabRemove
+    elements:
+      - <dl>
+      - <dl class>
+      - <dt>
+      - <dd>
+utils_ckeditor_button:
+  ckeditor5:
+    plugins: [button.Button]
+  drupal:
+    label: 'Button'
+    library: utils_ckeditor/internal.ckeditor5.button
+    admin_library: utils_ckeditor/internal.ckeditor5.button.admin
+    class: Drupal\utils_ckeditor\Plugin\CKEditor5Plugin\Button
+    toolbar_items:
+      Button:
+        label: 'Button'
+    elements:
+      - <dl>
+      - <dl class>
+      - <dt>
+      - <dd>
+
+utils_ckeditor_card:
+  ckeditor5:
+    plugins:
+      - card.Card
+    config:
+      card:
+        contentToolbar: [cardAddAbove, cardAddBelow, cardRemove]
+  drupal:
+    label: 'Card'
+    library: utils_ckeditor/internal.ckeditor5.card
+    admin_library: utils_ckeditor/internal.ckeditor5.card.admin
+    class: Drupal\utils_ckeditor\Plugin\CKEditor5Plugin\Card
+    toolbar_items:
+      Card:
+        label: 'Card'
+        widgets:
+          - cardAddAbove
+          - cardAddBelow
+          - cardRemove
+    elements:
+      - <dl>
+      - <dl class>
+      - <dt class>
+      - <dd class>
+
+utils_ckeditor_alert:
+  ckeditor5:
+    plugins: [alert.Alert]
+  drupal:
+    label: 'Alert'
+    library: utils_ckeditor/internal.ckeditor5.alert
+    admin_library: utils_ckeditor/internal.ckeditor5.alert.admin
+    class: Drupal\utils_ckeditor\Plugin\CKEditor5Plugin\Alert
+    toolbar_items:
+      Alert:
+        label: 'Alert'
+    elements:
+      - <dl>
+      - <dl class data-type data-size data-title>
+      - <dt>
+      - <dt class>
+      - <dd>
+      - <dd class>
+    attributes:
+      - data-type
+      - data-size
+      - data-title
+      - title
+      - type
+      - size
+
+utils_ckeditor_badge:
+  ckeditor5:
+    plugins: [badge.Badge]
+    config:
+      badge:
+        contentToolbar: [badgeAddBelow, badgeRemove]
+  drupal:
+    label: 'Badge'
+    library: utils_ckeditor/internal.ckeditor5.badge
+    admin_library: utils_ckeditor/internal.ckeditor5.badge.admin
+    class: Drupal\utils_ckeditor\Plugin\CKEditor5Plugin\Badge
+    toolbar_items:
+      Badge:
+        label: 'Badge'
+    elements:
+      - <dl>
+      - <dl class data-type data-size data-icon>
+      - <dt>
+      - <dd>
+    attributes:
+      - data-type
+      - data-size
+      - data-icon
+      - title
+      - type
+      - size

@@ -1,0 +1,14 @@
+utils_ckeditor.video_add_action:
+  route_name: utils_ckeditor.host_video.add
+  title: 'Ajouter un hôte'
+  appears_on:
+    - utils_ckeditor.host_video.display
+
+
+utils_ckeditor.video_list_action:
+  route_name: utils_ckeditor.host_video.display
+  title: 'Configuration des hosts pour le module CKEDITOR Video'
+  appears_on:
+    - utils_ckeditor.host_video.edit
+    - utils_ckeditor.host_video.delete
+
